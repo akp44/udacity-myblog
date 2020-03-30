@@ -1,0 +1,111 @@
+@import "followMe.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import "blog.css";
+body{
+	font-family: Arial;
+	margin:0;
+	padding:20px;
+	background-color: #f1f1f1;
+}
+*{
+	box-sizing: border-box;
+}
+.popular{
+    display: grid;
+}
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+header{
+	background-color: #ffffff;
+	padding:30px;
+}
+header h1{
+	text-align: center;
+	font-size:60px;
+	color:#000000;
+	margin:1.5 0px;
+}
+
+h2{
+	color:#000000;
+margin:1.5 0px;	
+}
+.left-column{
+float: left;
+width: 75%;	
+}
+
+.right-column{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+}
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+	margin-top:20px;
+	display: grid;
+}
+
+.card img{
+	width: 100%;
+}
+
+
+.right-column .card img{
+	margin-bottom: 10px;
+}
+
+
+footer{
+	background-color: #dddddd;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*responsive */
+
+@media(max-width:800px){
+	.left-column,.right-column{
+    width: 100%;
+    padding: 0px;
+	}
+}
+
+
+
+/*Button Style starts here*/
+.divbtn {
+	width: 50%;
+}
+.divbtn .more {
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    background-color: teal;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+}
+.divbtn .more:hover {
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color: teal;
+}
+/*Button Style ends here*/
+
+/*Footer starts here*/
+footer a {
+	text-decoration: none;
+	color: black;
+}
+/*Footer ends here*/

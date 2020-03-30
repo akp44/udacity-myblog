@@ -1,0 +1,94 @@
+body{
+	font-family: Arial;
+	margin:0;
+	padding:20px;
+	background-color: #f1f1f1;
+}
+*{
+	box-sizing: border-box;
+}
+
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+header{
+	background-color: #ffffff;
+	padding:30px;
+}
+header h1{
+	text-align: center;
+	font-size:60px;
+	color:#000000;
+	margin:1.5 0px;
+}
+
+h2{
+	color:#000000;
+margin:1.5 0px;	
+}
+.left-column{
+float: left;
+width: 75%;	
+}
+
+.right-column{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+}
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+ margin-top:20px;
+}
+
+.card img{
+	width: 100%;
+}
+
+figcaption{
+	text-align: center;
+}
+
+
+.right-column .card img{
+	margin-bottom: 10px;
+}
+
+.category{
+	display: flex;
+	flex-direction: column;
+}
+
+footer{
+	background-color: #dddddd;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*responsive */
+
+@media(max-width:800px){
+	.left-column,.right-column{
+    width: 100%;
+    padding: 0px;
+	}
+}
+
+/*Author info*/
+.author-info {
+	display: grid;
+	width: 100%;
+	margin: 10px auto auto auto;
+	line-height: 23px;
+	font-weight: 500;
+	font-size: 15px;
+	color: green;
+}
+.row p {
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
